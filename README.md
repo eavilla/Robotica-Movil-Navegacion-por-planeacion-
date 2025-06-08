@@ -69,6 +69,10 @@ Finalmente la funcion de coste corresponde a: Coste(path) = Σ_{i=1 to N-1} √[
 Donde cada término es la distancia euclídea entre el nodo i y el nodo i+1.  
 A continuacion se presenta las graficas del algoritmo PRM y la ruta encontrada.
 
+| Fig 1 **Mapa Original** |
+|:-----------------:|
+|![Figura3](https://github.com/user-attachments/assets/82926b42-8b55-4b25-ac42-32bc4fa68336)|
+
 ![Figura3](https://github.com/user-attachments/assets/82926b42-8b55-4b25-ac42-32bc4fa68336)
 
 ### Planeacion PRM
