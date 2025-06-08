@@ -5,6 +5,11 @@
 * Emily Angelica Villanueva Serna
 * Elvin Andres Corredor Torres
 
-## ℹ️Descripción
+## ℹ️Navegacion por planeacion (ROBOT ePuck)
 
-Navegacion por planeacion
+### 🏁Objetivos
+* Ejecutar las etapas necesarias para crear una ruta ´optima y la simulaci´on de una misi´on de robot con ruedas por el metodo de navegación por planeación.
+
+### Modelo cinematico
+
+
