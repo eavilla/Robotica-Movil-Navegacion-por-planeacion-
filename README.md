@@ -19,7 +19,7 @@ Para el inicio de la simulacion se tomo el mapa propuesto, el cual correspondia 
 <table>
   <tr>
     <td align="center">
-      <img src="ruta/a/mapa_original.png" width="300"/><br>
+      <![Figura1](https://github.com/user-attachments/assets/3e8ac12a-0fa6-4d04-92d1-9830fac7473d)/><br>
       **Mapa Original**
     </td>
     <td align="center">
