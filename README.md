@@ -62,10 +62,13 @@ La funcion de costo que se utiliza para cada arista del roadmap es la distancia 
 ### Función de coste de PRM
 
 Por defecto, `mobileRobotPRM` emplea la **distancia euclídea** como función de coste. Para una secuencia de nodos \(\{\mathbf{x}_1, \mathbf{x}_2, \dots, \mathbf{x}_N\}\), el coste total del camino es:
+El planificador:
+* Construye un grafo cuyos vértices son las muestras en el espacio libre del mapa inflado.
+* Conecta cada par de nodos cuya separación sea menor o igual a ConnectionDistance.
+* Asigna a cada arista un peso igual a la distancia euclídea entre sus dos extremos.
+* Ejecuta Dijkstra (o un algoritmo equivalente de camino mínimo) sobre ese grafo para encontrar la ruta de coste mínimo.
 
-\[
-\text{Coste}(path) \;=\;\sum_{i=1}^{N-1} \bigl\|\mathbf{x}_{i+1} - \mathbf{x}_i\bigr\|_2
-\]
+Coste(path) = Σ_{i=1 to N-1} √[ (x_{i+1} - x_i)^2 + (y_{i+1} - y_i)^2 ]
 
 donde
 - \(\mathbf{x}_i = [x_i,\;y_i]\) es la posición del nodo \(i\).
