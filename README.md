@@ -26,8 +26,8 @@ Una vez con el mapa inflado utilizamos el algoritmo PRM para realizar la planeac
 
 * prm.NumNodes = 300
 * prm.ConnectionDistance = 0.2
-* startLocation = [0, 1.2]
-* endLocation = [1.2, 0]
+* StartLocation = [0, 1.2]
+* EndLocation = [1.2, 0]
 
 La ruta optima encontrada por el algoritmo segun los parametros se presenta en la siguiente tabla.
 
@@ -54,3 +54,23 @@ La ruta optima encontrada por el algoritmo segun los parametros se presenta en l
 |  19   | 1.1535  | 0.2361  |
 |  20   | 1.2158  | 0.0073  |
 |  21   | 1.2000  | 0.0000  |
+
+La funcion de costo que se utiliza para cada arista del roadmap es la distancia euclídea entre los dos nodos conectados. "path = findpath(prm, startLocation, endLocation);"
+
+![Figura3](https://github.com/user-attachments/assets/82926b42-8b55-4b25-ac42-32bc4fa68336)
+
+### Función de coste de PRM
+
+Por defecto, `mobileRobotPRM` emplea la **distancia euclídea** como función de coste. Para una secuencia de nodos \(\{\mathbf{x}_1, \mathbf{x}_2, \dots, \mathbf{x}_N\}\), el coste total del camino es:
+
+\[
+\text{Coste}(path) \;=\;\sum_{i=1}^{N-1} \bigl\|\mathbf{x}_{i+1} - \mathbf{x}_i\bigr\|_2
+\]
+
+donde
+- \(\mathbf{x}_i = [x_i,\;y_i]\) es la posición del nodo \(i\).
+- \(\|\cdot\|_2\) denota la norma Euclídea en \(\mathbb{R}^2\):
+
+\[
+\|\mathbf{u}\|_2 = \sqrt{u_x^2 + u_y^2}.
+\]
