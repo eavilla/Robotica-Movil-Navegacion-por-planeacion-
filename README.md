@@ -16,6 +16,19 @@
 
 Para el inicio de la simulacion se tomo el mapa propuesto, el cual correspondia a una matriz logica de 52x52, donde 0 indica un lugar vacio y el 1 un lugar ocupado. En la Figura 1 se puede evidenciar el mapa graficado con el software Matlab en el que se considero una resolucion de 40 celdas/ metro. Por otro lado, en la figura 2 se puede evidenciar el mapa inflado considerando un radio de inflado de 0.054 el cual corresponde al radio del robot ePuck que se encuentra en CoppeliaSim.
 
+<table>
+  <tr>
+    <td align="center">
+      <img src="ruta/a/mapa_original.png" width="300"/><br>
+      **Mapa Original**
+    </td>
+    <td align="center">
+      <img src="ruta/a/mapa_inflado.png" width="300"/><br>
+      **Mapa Inflado**
+    </td>
+  </tr>
+</table>
+
 ![Figura1](https://github.com/user-attachments/assets/3e8ac12a-0fa6-4d04-92d1-9830fac7473d)
 
 ![Figura2](https://github.com/user-attachments/assets/737b7126-0a7c-4303-96f3-134ed966bdbc)
@@ -57,14 +70,15 @@ La ruta optima encontrada por el algoritmo segun los parametros se presenta en l
 
 ### Función de coste de PRM
 La funcion de costo que se utiliza para cada arista del roadmap es la distancia euclídea entre los dos nodos conectados. "path = findpath(prm, startLocation, endLocation);"
-Por defecto, `mobileRobotPRM` emplea la **distancia euclídea** como función de coste. Para una secuencia de nodos \(\{\mathbf{x}_1, \mathbf{x}_2, \dots, \mathbf{x}_N\}\), el coste total del camino es:
+Por defecto, `mobileRobotPRM` emplea la **distancia euclídea** como función de coste.
+
 El planificador:
 * Construye un grafo cuyos vértices son las muestras en el espacio libre del mapa inflado.
 * Conecta cada par de nodos cuya separación sea menor o igual a ConnectionDistance.
 * Asigna a cada arista un peso igual a la distancia euclídea entre sus dos extremos.
 * Ejecuta Dijkstra (o un algoritmo equivalente de camino mínimo) sobre ese grafo para encontrar la ruta de coste mínimo.
 
-Coste(path) = Σ_{i=1 to N-1} √[ (x_{i+1} - x_i)^2 + (y_{i+1} - y_i)^2 ]
+Finalmente la funcion de coste corresponde a: Coste(path) = Σ_{i=1 to N-1} √[ (x_{i+1} - x_i)^2 + (y_{i+1} - y_i)^2 ]
 Donde cada término es la distancia euclídea entre el nodo i y el nodo i+1.  
 A continuacion se presenta las graficas del algoritmo PRM y la ruta encontrada.
 
