@@ -79,6 +79,16 @@ De igual forma se realizaron pruebas con el algoritmo RRT. Para crear este plani
 * planner.MaxIterations = 100000
 * planner.MaxConnectionDistance = 0.5
 
+A continuacion se presenta las graficas del algoritmo RRT y la ruta encontrada.
+| Fig 4 **Grafos algoritmo RRT y ruta solucion** |
+|:-----------------:|
+|![Figura4](https://github.com/user-attachments/assets/93a33efd-4ecc-4d60-ab58-d5bf5542da0b)|
+
 ### Simulacion en CoppeliaSim
 
-Una vez realizadas los algoritmos de planeacion integramos el mapa del laberinto a CoppeliaSim. Como se puede ver en la siguiente Figura
+Una vez realizadas los algoritmos de planeacion integramos el mapa del laberinto a CoppeliaSim. Como se puede ver en la siguiente Figura.
+
+| Fig 4 **Grafos algoritmo RRT y ruta solucion** |
+|:-----------------:|
+|![Figura4](https://github.com/user-attachments/assets/93a33efd-4ecc-4d60-ab58-d5bf5542da0b)|
+
