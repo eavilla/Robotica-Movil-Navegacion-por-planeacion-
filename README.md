@@ -94,7 +94,7 @@ Una vez realizadas los algoritmos de planeacion integramos el mapa del laberinto
 
 ### Simulación Matlab y CoppeliaSim
 
-Para la simulación se selecciona la ruta obtenida a travez del metodo PRM  y se utiliza el codigo  ..... y  .....
+Para la simulación se selecciona la ruta obtenida a travez del metodo PRM  y se utiliza el codigo  [CoppeliaMatlab.py](CoppeliaMatlab.m) y  el script en coppeliaSim [Mapa.ttt](Pruebagiro.ttt)
 
 https://github.com/user-attachments/assets/b9a6431f-b54f-4d1b-bedf-6477636e013f
 
