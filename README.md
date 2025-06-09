@@ -92,4 +92,10 @@ Una vez realizadas los algoritmos de planeacion integramos el mapa del laberinto
 |:-----------------:|
 |![ROBOTCOPELIASIM](https://github.com/user-attachments/assets/19d366f5-53b1-4f0b-b317-54b1b292d00b)|
 
+### Simulación Matlab y CoppeliaSim
+
+Para la simulación se selecciona la ruta obtenida a travez del metodo PRM  y se utiliza el codigo  ..... y  .....
+
+https://github.com/user-attachments/assets/b9a6431f-b54f-4d1b-bedf-6477636e013f
+
 
