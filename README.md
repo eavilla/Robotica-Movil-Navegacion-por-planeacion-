@@ -11,6 +11,17 @@
 * Ejecutar las etapas necesarias para crear una ruta ´optima y la simulaci´on de una misi´on de robot con ruedas por el metodo de navegación por planeación.
 
 ### Modelo cinematico
+Para realizar el modelo cinematico se toma el radio de la rueda como 0.02122 m y el espacio entre las ruedas , es decir la trocha como 0.053 m . El modelo cinematico para el robot ePuck es el siguiente 
+
+Modelo cinemático del ePuck
+
+- v = (r/2) * (v_r + v_l)
+- ω = (r/L) * (v_r - v_l)
+
+Modelo Cinemático Inverso 
+
+- v_r = (2v + ωL) / (2r)
+- v_l = (2v - ωL) / (2r)
 
 ### Mapas
 
