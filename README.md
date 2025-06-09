@@ -90,5 +90,6 @@ Una vez realizadas los algoritmos de planeacion integramos el mapa del laberinto
 
 | Fig 4 **Grafos algoritmo RRT y ruta solucion** |
 |:-----------------:|
-|![Figura4](https://github.com/user-attachments/assets/93a33efd-4ecc-4d60-ab58-d5bf5542da0b)|
+|![ROBOTCOPELIASIM](https://github.com/user-attachments/assets/19d366f5-53b1-4f0b-b317-54b1b292d00b)|
+
 
