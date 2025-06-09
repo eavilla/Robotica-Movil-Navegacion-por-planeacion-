@@ -88,7 +88,7 @@ A continuacion se presenta las graficas del algoritmo RRT y la ruta encontrada.
 
 Una vez realizadas los algoritmos de planeacion integramos el mapa del laberinto a CoppeliaSim. Como se puede ver en la siguiente Figura.
 
-| Fig 4 **Grafos algoritmo RRT y ruta solucion** |
+| Fig 5 **Mapa del robot en CoppeliaSim ** |
 |:-----------------:|
 |![ROBOTCOPELIASIM](https://github.com/user-attachments/assets/19d366f5-53b1-4f0b-b317-54b1b292d00b)|
 
