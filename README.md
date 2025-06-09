@@ -69,10 +69,16 @@ Finalmente la funcion de coste corresponde a: Coste(path) = Σ_{i=1 to N-1} √[
 Donde cada término es la distancia euclídea entre el nodo i y el nodo i+1.  
 A continuacion se presenta las graficas del algoritmo PRM y la ruta encontrada.
 
-| Fig 1 **Mapa Original** |
+| Fig 3 **Grafos algoritmo PRM y ruta solucion** |
 |:-----------------:|
 |![Figura3](https://github.com/user-attachments/assets/82926b42-8b55-4b25-ac42-32bc4fa68336)|
 
-![Figura3](https://github.com/user-attachments/assets/82926b42-8b55-4b25-ac42-32bc4fa68336)
-
 ### Planeacion PRM
+
+De igual forma se realizaron pruebas con el algoritmo RRT. Para crear este planificador se uso la libreria de Matlab *plannerRRT* en la cual se consideran los siguientes parametros;
+* planner.MaxIterations = 100000
+* planner.MaxConnectionDistance = 0.5
+
+### Simulacion en CoppeliaSim
+
+Una vez realizadas los algoritmos de planeacion integramos el mapa del laberinto a CoppeliaSim. Como se puede ver en la siguiente Figura
