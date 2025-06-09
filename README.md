@@ -98,4 +98,7 @@ Para la simulación se selecciona la ruta obtenida a travez del metodo PRM  y se
 
 https://github.com/user-attachments/assets/b9a6431f-b54f-4d1b-bedf-6477636e013f
 
-
+### Conclusiones
+* Inflado de obstáculos y seguridad: Inflar el mapa en función del radio del robot (hábito imprescindibe) garantiza que las rutas generadas sean seguras, sin riesgo de colisión con las paredes.
+* En PRM, NumNodes y ConnectionDistance regulan el equilibrio entre cobertura del espacio y coste del grafo.
+* En RRT, MaxIterations y MaxConnectionDistance influyen en la velocidad de convergencia y la complejidad de la ruta.
